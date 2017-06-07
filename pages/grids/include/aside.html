@@ -1,0 +1,63 @@
+
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar" ng-controller="asideCtrl">
+    <!-- Sidebar user panel -->
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu" id="sidebar-menu">
+        <li class="treeview" ng-class="{'active':isActive('#/monitoring')}">
+            <a href="#/monitoring">
+                <i class="fa fa-eye"></i>
+                <span>实时监控</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/assignment')}">
+            <a href="#/assignment">
+                <i class="fa fa-envelope-o"></i>
+                <span>任务下发</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/message')}">
+            <a href="#/message">
+                <i class="fa fa-comment-o"></i>
+                <span>信息公告</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/news')}">
+            <a href="#/news">
+                <i class="fa fa-comments-o"></i>
+                <span>消息管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/company')}">
+            <a href="#/company">
+                <i class="fa fa-info-circle"></i>
+                <span>企业管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#')}">
+            <a href="#">
+                <i class="fa fa-bar-chart"></i>
+                <span>统计业务</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</section>
+<!-- /.sidebar -->
