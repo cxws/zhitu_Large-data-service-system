@@ -29,11 +29,7 @@ angular.module('myGerneral',['ng','ngRoute'])
         return current === href;
     }
 }])
-<<<<<<< HEAD
 .controller('homeCtrl',["$scope","$http",function($scope,$http){
-=======
-.controller('homeCtrl',"$http",["$scope",function($scope,$http){
->>>>>>> 74bdc6a55eabcc85754732db2bd5f5b56ef790f3
     $("#sparkline1").sparkline([14,21,8,12,10,18,25,20], {
             type: 'bar',
             height: '40',
@@ -1360,11 +1356,7 @@ angular.module('myGerneral',['ng','ngRoute'])
     $routeProvider
     .when('/home',{
         templateUrl:'general/home.html',
-<<<<<<< HEAD
         controller:'homeCtrl'   
-=======
-        controller:'homeCtrl'
->>>>>>> 74bdc6a55eabcc85754732db2bd5f5b56ef790f3
     })
     .when('/total-assets',{
         templateUrl:'general/total-assets.html',
