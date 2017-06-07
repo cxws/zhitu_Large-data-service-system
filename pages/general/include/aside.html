@@ -1,0 +1,89 @@
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar" ng-controller="asideCtrl">
+    <!-- Sidebar user panel -->
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        <li class="treeview" ng-class="{'active':isActive('#/home')}">
+            <a href="#/home">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/total-assets')||isActive('#/business-category')||isActive('#/technosphere')}">
+            <a href="javascript:void(0)">
+                <i class="fa fa-bar-chart"></i>
+                <span>宏观经济分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li ng-class="{'active':isActive('#/total-assets')}"><a href="#/total-assets"><i class="fa fa-circle-o"></i> 总资产分析</a></li>
+                <li><a href=""><i class="fa fa-circle-o"></i> 行业分析</a></li>
+                <li ng-class="{'active':isActive('#/business-category')}"><a href="#/business-category"><i class="fa fa-circle-o"></i> 企业类别分析</a></li>
+                <li ng-class="{'active':isActive('#/technosphere')}"><a href="#/technosphere"><i class="fa fa-circle-o"></i> 技术领域分析</a></li>
+                <li><a href=""><i class="fa fa-circle-o"></i> 人口分析</a></li>
+                <li><a href=""><i class="fa fa-circle-o"></i> 从业人员分析</a></li>
+                <li><a href=""><i class="fa fa-circle-o"></i> 容积率分析</a></li>
+            </ul>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/economy')}">
+            <a href="#/economy">
+                <i class="fa fa-bar-chart"></i>
+                <span>经济对比分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/enterprise-distribution')}">
+            <a href="#/enterprise-distribution">
+                <i class="fa fa-bar-chart"></i>
+                <span>企业分布分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/individual-enterprise')}">
+            <a href="#/individual-enterprise">
+                <i class="fa fa-bar-chart"></i>
+                <span>单个企业分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+        <li class="treeview" ng-class="{'active':isActive('#/business-indicator')}">
+            <a href="#/business-indicator">
+                <i class="fa fa-bar-chart"></i>
+                <span>企业指标预警</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+            <li class="treeview" ng-class="{'active':isActive('#/relief-area')}">
+            <a href="#/relief-area">
+                <i class="fa fa-bar-chart"></i>
+                <span>缓冲区统计分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+            <li class="treeview" ng-class="{'active':isActive('#/multi-index')}">
+            <a href="#/multi-index">
+                <i class="fa fa-bar-chart"></i>
+                <span>多指标综合分析</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</section>
+<!-- /.sidebar -->

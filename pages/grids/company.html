@@ -1,0 +1,343 @@
+
+<section class="content-header">
+    <!--面包屑导航-->
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">企业信息</li>
+    </ol>
+</section>
+<section class="content" ng-controller="heightCtrl">
+    <div class="row">
+        <!--左侧表格-->
+        <div class="col-md-6">
+            <div class="box box-info box-left" id="box-left">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4">
+                            <input type="text" placeholder="输入要搜索的关键字" class="form-control">
+                        </div>
+                        <div class="col-md-7 col-xs-8">
+                            <button class="btn btn-info">查询</button>
+                            <button class="btn btn-info">查看</button>
+                            <button class="btn btn-info">修改</button>
+                            <button class="btn btn-info" id="task-add">增加</button>
+                            <button class="btn btn-info">删除 </button>
+                            <button class="btn btn-info">导入</button>
+                            <button class="btn btn-info">导出</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table no-margin table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>单位名称</th>
+                            <th>法人代表</th>
+                            <th>所在地址</th>
+                            <th>单位注册地址</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        <tr>
+                            <td>企业法人</td>
+                            <td>江苏智途科技</td>
+                            <td>何小军</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                            <td>扬州市广陵区江苏信息产业基地</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                <!-- /.table-responsive -->
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        <!--右侧内容-->
+        <div class="col-md-6" style="height: 100%">
+            <div class="box box-info box-right" ng-style="{{rightHeight}}">             
+                <div class="slimScrollDiv" ng-style="{{rightChildStyle}}">
+                    <div class="box-body">
+                        <h3 class="box-title">基本信息</h3>
+                        <form class="form-horizontal">
+                            <div class="box-body">
+                                <div class="form-group">
+                                <label for="inputText1" class="col-sm-4 control-label">单位类型</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText1" placeholder="企业法人" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText2" class="col-sm-4 control-label">单位名称</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText2" placeholder="智途科技" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText3" class="col-sm-4 control-label">法人代表</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText3" placeholder="何小军" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText5" class="col-sm-4 control-label">单位所在地地址(街)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText5" placeholder="扬州市广陵区信息产业基地" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText6" class="col-sm-4 control-label">单位位于-社区(居委会)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText6" placeholder="湾头社区" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText6" class="col-sm-4 control-label">单位位于-街道办事处</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText6" placeholder="湾头社区" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText7" class="col-sm-4 control-label">单位注册地地址(街)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText7" placeholder="扬州市广陵区信息产业基地" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText8" class="col-sm-4 control-label">单位注册地单位位于-社区(居委会)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText8" placeholder="广陵区" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText9" class="col-sm-4 control-label">单位注册地单位位于-街道办事处</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText9" placeholder="广陵区" disabled>
+                                </div>
+                                </div>
+                            </div>
+                            </form>
+                            <hr>
+                            <h3 class="box-title">联系电话</h3>
+                            <form class="form-horizontal">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                    <label for="inputText1" class="col-sm-4 control-label">长途区号</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText1" placeholder="0514" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText2" class="col-sm-4 control-label">固定电话</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText2" placeholder="87021650" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText3" class="col-sm-4 control-label">电话分机</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText3" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText5" class="col-sm-4 control-label">移动电话</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText5" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText6" class="col-sm-4 control-label">网址</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText6" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText6" class="col-sm-4 control-label">传真号码</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText6" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText7" class="col-sm-4 control-label">传真分机号</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText7" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">邮政编码</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h3 class="box-title">经营信息</h3>
+                            <form class="form-horizontal">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                    <label for="inputText1" class="col-sm-4 control-label">开业(成立)时间(年)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText1" placeholder="2005" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText2" class="col-sm-4 control-label">开业(成立)时间(月)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText2" placeholder="06" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText3" class="col-sm-4 control-label">主要业务活动(或主要产品)1</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText3" placeholder="地理信息" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText5" class="col-sm-4 control-label">主要业务活动(或主要产品)2</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText5" placeholder="三维建模" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText6" class="col-sm-4 control-label">主要业务活动(或主要产品)3</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText6" placeholder="室内装潢" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText6" class="col-sm-4 control-label">法人从业人员期末人数</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText6" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText7" class="col-sm-4 control-label">法人从业人员期末人数中女性</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText7" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">营业收入</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">主营业务收入</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">营业税金及附加</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">主营业务税金及附加</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">资产总计</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">实收资本</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">非企业单位支出(费用)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">年末总计</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">经营性单位收入</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">非经营性单位支出</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="inputText8" class="col-sm-4 control-label">工业生产能源消费量</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputText8" placeholder="" disabled>
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</section>

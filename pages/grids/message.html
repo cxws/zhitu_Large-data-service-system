@@ -1,0 +1,131 @@
+
+<section class="content-header">
+    <!--面包屑导航-->
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">信息公告</li>
+    </ol>
+</section>
+<section class="content" ng-controller="heightCtrl">
+    <div class="row">
+        <!--左侧表格-->
+        <div class="col-md-6">
+            <div class="box box-info box-left" id="box-left">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-4">
+                            <input type="text" placeholder="输入要搜索的关键字" class="form-control">
+                        </div>
+                        <div class="col-md-6 col-xs-8">
+                            <button class="btn btn-info">查询</button>
+                            <button class="btn btn-info">查看</button>
+                            <button class="btn btn-info" id="message-add" ng-click="messageAdd($event)">增加</button>
+                            <button class="btn btn-info">修改 </button>
+                            <button class="btn btn-info">删除 </button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table no-margin table table-bordered table-hover">
+                            <col width="30%">
+                            <col width="30%">
+                            <col width="20%">
+                            <col width="20%">   
+                        <thead>
+                        <tr>
+                            <th>标题</th>
+                            <th>内容</th>
+                            <th>发布人</th>
+                            <th>发布时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        <tr>
+                            <td>关于征集2017广陵区文化创新</td>
+                            <td class="td-omit">各单位：为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展</td>
+                            <td>管理员01</td>
+                            <td>2017-05-23</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                <!-- /.table-responsive -->
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+        <!--右侧内容-->
+        <div class="col-md-6" style="height: 100%">
+            <div class="box box-info box-right" ng-style="{{rightHeight}}">             
+                <div class="slimScrollDiv" ng-style="{{rightChildStyle}}">
+                    <div class="box-body">
+                        <form class="form-horizontal">
+                            <div class="box-body">
+                                <div class="form-group">
+                                <label for="inputText1" class="col-sm-4 control-label">标题</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText1" placeholder="会议通知" disabled>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText2" class="col-sm-4 control-label">内容</label>
+                                <div class="col-sm-8">
+                                    <textarea rows="25" cols="10" class="form-control" disabled>各单位：
+为促进广陵新区文化创新发展，落实政府工作，促进文化投资，经济发展
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloribus repudiandae odit magni praesentium! Quasi harum velit suscipit eligendi corporis dolorem eos, nulla, distinctio enim maxime repudiandae quaerat eveniet dolore.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloribus repudiandae odit magni praesentium! Quasi harum velit suscipit eligendi corporis dolorem eos, nulla, distinctio enim maxime repudiandae quaerat eveniet dolore.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloribus repudiandae odit magni praesentium! Quasi harum velit suscipit eligendi corporis dolorem eos, nulla, distinctio enim maxime repudiandae quaerat eveniet dolore.
+                                    </textarea>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="inputText3" class="col-sm-4 control-label">发布人</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputText3" placeholder="管理员01" disabled>
+                                </div>
+                                </div>
+                                <br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</section>
