@@ -13,15 +13,17 @@
             <div class="box box-info box-left" id="box-left">
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-md-4 col-xs-4">
-                            <input type="text" placeholder="输入要搜索的关键字" class="form-control">
-                        </div>
-                        <div class="col-md-6 col-xs-8">
-                            <button class="btn btn-info">查询</button>
-                            <button class="btn btn-info">查看</button>
-                            <button class="btn btn-info" id="task-add" ng-click="taskAdd($event)">增加</button>
-                            <button class="btn btn-info">删除 </button>
-                        </div>
+                        <form action="">
+                            <div class="col-md-4 col-xs-4">
+                                <input type="text" placeholder="输入要搜索的关键字" name="keyword" class="form-control">
+                            </div>
+                            <div class="col-md-6 col-xs-8">
+                                <button class="btn btn-info" type="submit">查询</button>
+                                <button class="btn btn-info">查看</button>
+                                <button class="btn btn-info" id="task-add" ng-click="taskAdd($event)">增加</button>
+                                <button class="btn btn-info">删除 </button>
+                            </div>
+                        </form>
                     </div>
                     <div class="table-responsive">
                         <table class="table no-margin table table-bordered table-hover">

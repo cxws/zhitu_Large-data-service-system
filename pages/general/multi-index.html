@@ -29,57 +29,59 @@
                     </div>  
                 </div>
                 <div class="box-body">
-                    <div class="row" style="margin-bottom: 10px;">
-                        <div class="col-md-12">                                    
-                            <div class="pull-left">时间选择：开始时间</div>
-                            <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
+                    <form action="">
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-md-12">                                    
+                                <div class="pull-left">时间选择：开始时间</div>
+                                <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right datepicker" value="2017-6-6" name="startDate">
                                 </div>
-                                <input type="text" class="form-control pull-right datepicker" value="2017-6-6">
-                            </div>
-                            <div class="pull-left">结束时间</div>
-                            <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
+                                <div class="pull-left">结束时间</div>
+                                <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right datepicker" value="2017-6-6" name="endDate">
                                 </div>
-                                <input type="text" class="form-control pull-right datepicker" value="2017-6-6">
-                            </div>
-                            <div class="pull-left">产业选择</div>
-                            <div class="pull-left" style="width:10%;margin: 0 10px;">
-                                <select name="" id="" class="form-control">
-                                    <option value="">所有</option>
-                                    <option value="">IT产业</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="pull-left">指标选择：</div>
-                                <div class="pull-left" style="width:42%;margin: 0 10px;">                                               
-                                    <input type="checkbox" class="minimal" name="index" checked style="position: absolute; opacity: 0;">
-                                    留区税收                                                                                  
-                                    <input type="checkbox" class="minimal" name="index" checked  style="position: absolute; opacity: 0;">
-                                    总收入                                                                                    
-                                    <input type="checkbox" class="minimal" name="index"  style="position: absolute; opacity: 0;">
-                                    工业总产值                                                                                  
-                                    <input type="checkbox" class="minimal" name="index"  style="position: absolute; opacity: 0;">
-                                    出口总额                                                                                   
-                                    <input type="checkbox" class="minimal" name="index"  style="position: absolute; opacity: 0;">
-                                    规模以上企业总收入
-                                    <input type="checkbox" class="minimal" name="index"  style="position: absolute; opacity: 0;">
-                                    从业人员
-                                    <input type="checkbox" class="minimal" name="index"  style="position: absolute; opacity: 0;">
-                                    固定资产投资                                                                                                                                 
-                                </div>
-                                <div>
-                                    <button class="btn btn-success">确定</button>
+                                <div class="pull-left">产业选择</div>
+                                <div class="pull-left" style="width:10%;margin: 0 10px;">
+                                    <select name="industry" id="" class="form-control">
+                                        <option value="all">所有</option>
+                                        <option value="IT">IT产业</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="pull-left">指标选择：</div>
+                                    <div class="pull-left" style="width:42%;margin: 0 10px;">                                               
+                                        <input type="checkbox" class="minimal" name="index" value="lq" checked style="position: absolute; opacity: 0;">
+                                        留区税收                                                                                  
+                                        <input type="checkbox" class="minimal" name="index" value="tt" checked  style="position: absolute; opacity: 0;">
+                                        总收入                                                                                    
+                                        <input type="checkbox" class="minimal" name="index" value="gy"  style="position: absolute; opacity: 0;">
+                                        工业总产值                                                                                  
+                                        <input type="checkbox" class="minimal" name="index" value="ck"  style="position: absolute; opacity: 0;">
+                                        出口总额                                                                                   
+                                        <input type="checkbox" class="minimal" name="index" value="gm"  style="position: absolute; opacity: 0;">
+                                        规模以上企业总收入
+                                        <input type="checkbox" class="minimal" name="index" value="cy"  style="position: absolute; opacity: 0;">
+                                        从业人员
+                                        <input type="checkbox" class="minimal" name="index" value="gd"  style="position: absolute; opacity: 0;">
+                                        固定资产投资                                                                                                                                 
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-success" type="submit">确定</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

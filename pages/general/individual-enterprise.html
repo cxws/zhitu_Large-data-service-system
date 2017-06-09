@@ -30,18 +30,20 @@
                 </div>
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-md-12">                                    
-                            <div class="pull-left"><b>企业选择：</b>企业名称</div>
-                            <div class="pull-left" style="width: 10%;margin: 0 10px;">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="pull-left">机构代码</div>
-                            <div class="pull-left" style="width: 10%;margin: 0 10px;">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div>
-                                <button class="btn btn-success">确定</button>
-                            </div>
+                        <div class="col-md-12">
+                            <form action="">                                  
+                                <div class="pull-left"><b>企业选择：</b>企业名称</div>
+                                <div class="pull-left" style="width: 10%;margin: 0 10px;">
+                                    <input type="text" class="form-control" name="busName">
+                                </div>
+                                <div class="pull-left">机构代码</div>
+                                <div class="pull-left" style="width: 10%;margin: 0 10px;">
+                                    <input type="text" class="form-control" name="busNumber">
+                                </div>
+                                <div>
+                                    <button class="btn btn-success" type="submit">确定</button>
+                                </div>
+                            </form>  
                         </div>
                     </div>
                     <div class="row" style="margin-bottom: 10px;">
@@ -276,34 +278,36 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-md-12">                                    
-                            <div class="pull-left">开始时间</div>
-                            <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
+                        <div class="col-md-12">
+                            <form action="">                                    
+                                <div class="pull-left">开始时间</div>
+                                <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right datepicker" name="startDate">
                                 </div>
-                                <input type="text" class="form-control pull-right datepicker">
-                            </div>
-                            <div class="pull-left">结束时间</div>
-                            <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
-                                <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
+                                <div class="pull-left">结束时间</div>
+                                <div class="input-group pull-left" style="width: 10%;margin: 0 10px;">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right datepicker" name="endDate">
                                 </div>
-                                <input type="text" class="form-control pull-right datepicker">
-                            </div>
-                            <div class="pull-left">指标选择</div>
-                            <div class="pull-left" style="width:10%;margin: 0 10px;">
-                                <select name="" id="" class="form-control">
-                                    <option value="">留区税收</option>
-                                    <option value="">总收入</option>
-                                    <option value="">工业总产值</option>
-                                    <option value="">出口总额</option>
-                                    <option value="">利润总额</option>
-                                </select>
-                            </div>
-                            <div>
-                                <button class="btn btn-success">确定</button>
-                            </div>
+                                <div class="pull-left">指标选择</div>
+                                <div class="pull-left" style="width:10%;margin: 0 10px;">
+                                    <select name="index" id="" class="form-control">
+                                        <option value="lq">留区税收</option>
+                                        <option value="tt">总收入</option>
+                                        <option value="gy">工业总产值</option>
+                                        <option value="ck">出口总额</option>
+                                        <option value="lr">利润总额</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success" type="submit">确定</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <hr>
