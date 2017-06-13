@@ -1,0 +1,120 @@
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar" ng-controller="asideCtrl">
+    <!-- Sidebar user panel -->
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu">
+        <li class="treeview" ng-class="{'active':isActive('#/topics-indicators')||isActive('#/grouping')||isActive('#/bivariate-table')||isActive('#/data-integration')||isActive('#/index-data')}">
+            <a href="javascript:void(0)">
+                <i class="fa fa-sitemap"></i>
+                <span>元数据平台</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="treeview" ng-class="{'active':isActive('#/topics-indicators')||isActive('#/grouping')||isActive('#/bivariate-table')||isActive('#/data-integration')||isActive('#/index-data')}">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-tasks"></i>
+                        <span>数据维护</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/topics-indicators')}"><a href="#/topics-indicators"><i class="fa fa-circle-o"></i> 主题与指标</a></a></li>
+                        <li ng-class="{'active':isActive('#/grouping')}"><a href="#/grouping"><i class="fa fa-circle-o"></i> 分组管理</a></a></li>
+                        <li ng-class="{'active':isActive('#/bivariate-table')}"><a href="#/bivariate-table"><i class="fa fa-circle-o"></i> 二维表建模</a></a></li>
+                        <li ng-class="{'active':isActive('#/data-integration')}"><a href="#/data-integration"><i class="fa fa-circle-o"></i> 数据整合</a></a></li>
+                        <li ng-class="{'active':isActive('#/index-data')}"><a href="#/index-data"><i class="fa fa-circle-o"></i> 指标数据查询</a></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="javascript:void(0)">
+                <i class="fa fa-desktop"></i>
+                <span>系统平台</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-cog"></i>
+                        <span>模块操作管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/module-menu')}"><a href="#/module-menu"><i class="fa fa-circle-o"></i>模块菜单管理</a></a></li>
+                        <li ng-class="{'active':isActive('')}"><a href=""><i class="fa fa-circle-o"></i> 操作按钮管理</a></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-newspaper-o"></i>
+                        <span>日志管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/system-log')}"><a href="#/system-log"><i class="fa fa-circle-o"></i>系统日志管理</a></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+            <li class="treeview">
+            <a href="javascript:void(0)">
+                <i class="fa fa-users"></i>
+                <span>统一权限</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-university"></i>
+                        <span>机构管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/institution-information')}"><a href="#/institution-information"><i class="fa fa-circle-o"></i>机构信息管理</a></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-user-secret"></i>
+                        <span>角色管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/role-permission')}"><a href="#/role-permission"><i class="fa fa-circle-o"></i>角色权限管理</a></a></li>
+                        <li ng-class="{'active':isActive('')}"><a href=""><i class="fa fa-circle-o"></i>角色分配管理</a></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-user"></i>
+                        <span>用户管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li ng-class="{'active':isActive('#/account-information')}"><a href="#/account-information"><i class="fa fa-circle-o"></i>账户信息管理</a></a></li>
+                        <li ng-class="{'active':isActive('#/personnel-information')}"><a href="#/personnel-information"><i class="fa fa-circle-o"></i>人员信息管理</a></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<!-- /.sidebar -->

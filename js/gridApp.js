@@ -58,25 +58,27 @@ angular.module('myGrid',['ng','ngRoute'])
                         '<div class="box-body">'+
                         '<div class="form-group">'+
                         '<label for="exampleInputEmail1">任务名称：</label>'+
-                        '<input type="email" class="form-control"  placeholder="">'+
+                        '<input type="email" class="form-control" name="taskName" placeholder="">'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">任务类型：</label>'+
-                        '<select class="form-control"><option value="">常规</option></select>'+
+                        '<select class="form-control" name="taskType"><option value="">常规</option></select>'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">执行人：</label>'+
-                        '<select class="form-control"><option value="">王强</option></select>'+
+                        '<select class="form-control" name="taskExecutor"><option value="">王强</option></select>'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">任务内容：</label>'+
-                        '<textarea rows="3" cols="10" class="form-control"></textarea>'+
+                        '<textarea rows="3" cols="10" class="form-control" name="taskContent"></textarea>'+
                         '</div>'+
                         '</div>'+
-                        '<div class="box-footer text-right">'+
-                        '<button type="button" class="btn btn-default" style="margin-right:15px;">取消</button><button type="button" class="btn btn-primary">下发</button>'+
-                        '</div>'+
-                        '</form>'
+                        '</form>',
+                btn:['下发','取消'],
+                yes:function(index,layero){
+                    layer.close(index);
+                    layer.msg('下发完成！',{time:1000,icon:1});
+                }
             });
         }
     }])
@@ -95,21 +97,23 @@ angular.module('myGrid',['ng','ngRoute'])
                         '<div class="box-body">'+
                         '<div class="form-group">'+
                         '<label for="exampleInputEmail1">标题：</label>'+
-                        '<input type="email" class="form-control"  placeholder="">'+
+                        '<input type="email" class="form-control" name="messageTitle"  placeholder="">'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">发布人：</label>'+
-                        '<select class="form-control"><option value="">王强</option></select>'+
+                        '<select class="form-control" name="messageUser"><option value="">王强</option></select>'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">公告内容：</label>'+
-                        '<textarea rows="3" cols="10" class="form-control"></textarea>'+
+                        '<textarea rows="3" cols="10" class="form-control" name="messageContent"></textarea>'+
                         '</div>'+
                         '</div>'+
-                        '<div class="box-footer text-right">'+
-                        '<button type="button" class="btn btn-default" style="margin-right:15px;">取消</button><button type="button" class="btn btn-primary">发布</button>'+
-                        '</div>'+
-                        '</form>'
+                        '</form>',
+                btn:['发布','取消'],
+                yes:function(index,layero){
+                    layer.close(index);
+                    layer.msg('发布成功！', {time:1000,icon: 1});
+                }
             });
         }
     }])
@@ -128,17 +132,19 @@ angular.module('myGrid',['ng','ngRoute'])
                         '<div class="box-body">'+
                         '<div class="form-group">'+
                         '<label for="exampleInputEmail1">标题：</label>'+
-                        '<input type="email" class="form-control"  placeholder="">'+
+                        '<input type="email" class="form-control" name="newsTitle"  placeholder="">'+
                         '</div>'+
                         '<div class="form-group">'+
                         '<label for="exampleInputPassword1">内容：</label>'+
-                        '<textarea rows="3" cols="10" class="form-control"></textarea>'+
+                        '<textarea rows="3" cols="10" class="form-control" name="newsContent"></textarea>'+
                         '</div>'+
                         '</div>'+
-                        '<div class="box-footer text-right">'+
-                        '<button type="button" class="btn btn-danger" style="margin-right:15px;">取消</button><button type="button" class="btn btn-primary">发送</button>'+
-                        '</div>'+
-                        '</form>'
+                        '</form>',
+                btn:['发送','取消'],
+                yes:function(index,layero){
+                    layer.close(index);
+                    layer.msg('发送成功！',{time:1000,icon:1});
+                }
             });
         }
     }])

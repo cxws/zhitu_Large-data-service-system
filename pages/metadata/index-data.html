@@ -1,0 +1,131 @@
+
+<section class="content-header">
+    <!--面包屑导航-->
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-tachometer"></i> 元数据平台</a></li>
+        <li><a href="#">数据维护</a></li>
+        <li class="active">指标数据查询</li>
+    </ol>
+</section>
+<section class="content" ng-controller="heightCtrl">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box box-info box-left">
+                <div class="box-header with-border">
+                    <h3 class="box-title">全部指标</h3>
+                    <a class="pull-right">切换到常用指标</a>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="">
+                                <input type="text" name="search" value="" class="form-control" placeholder="指标名称" style="width: 30%;display: inline-block;">
+                                <button class="btn btn-success" type="submit"><i class="fa fa-search"></i>查询</button>
+                                <button class="btn btn-primary" type="reset"><i class="fa fa-repeat"></i>重置</button>
+                            </form>                                  
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="index-menu">
+                        <li class="active">
+                            <i class="fa fa-database"></i>
+                            <a href="#">人口专题</a>
+                            <ul class="indexTree">
+                                <li><a href="#"><i class="fa fa-align-right"></i>迁移人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>文盲人口站15岁及以上人口比例（文盲率）</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>户籍人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>人均住房建筑面积</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>迁移人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>文盲人口站15岁及以上人口比例（文盲率）</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>户籍人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>人均住房建筑面积</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>迁移人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>文盲人口站15岁及以上人口比例（文盲率）</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>户籍人口</a></li>
+                                <li><a href="#"><i class="fa fa-align-right"></i>人均住房建筑面积</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box-right" ng-style="{{rHeight}}">
+                <div class="row"  style="height: 70%;">
+                    <div class="col-md-12" style="height: 100%;">
+                        <div class="box box-info" style="height: 98%;">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">已选指标</h3>
+                                <a href="#" class="pull-right" id="empty">[清空]</a>
+                            </div>
+                            <div class="box-body">
+                                                        
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row" style="height:30%;">
+                    <div class="col-md-12" style="height:100%;">
+                        <div class="box box-widget" style="height: 100%;">
+                            <div class="box-body">                                     
+                                <fieldset>
+                                    <legend>设置时间范围</legend>
+                                    时间选择：<input type="text" class="reservation" style="width:60%">
+                                </fieldset>                                          
+                            </div>
+                        </div>
+                    </div>
+                </div>                                               
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box-right" ng-style="{{rHeight}}">
+                <div class="row"  style="height: 70%;">
+                    <div class="col-md-12" style="height: 100%;">
+                        <div class="box box-info" style="height: 98%;">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">口径与分组</h3>
+                            </div>
+                            <div class="box-body">
+                                                        
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row" style="height:30%;">
+                    <div class="col-md-12" style="height:100%;">
+                        <div class="box box-widget" style="height: 100%;">
+                            <div class="box-body">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>                                               
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    /**icheck**/
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+    });
+    /**机构树**/
+    $('.index-menu li>a').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('active');
+    });
+    /**清空**/
+    $('#empty').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().next().html('');
+    });
+    /**日期范围**/
+    $('.reservation').daterangepicker();
+</script>
